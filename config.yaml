@@ -1,7 +1,7 @@
 date_of_run: 2023-08-05       # Date of the run
-id: SST193                    # Sequencing study id
+id: XXX175                   # Sequencing study id
 #output directory 
-output_dir: ~/desktop/SST193/
+output_dir: ~/desktop/XXX175/
 # path where metadata is
 path_to_metadata: ~/Downloads/metadata.csv
 #path where targeting metadata is
