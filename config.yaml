@@ -1,0 +1,30 @@
+date_of_run: 2023-08-05       # Date of the run
+id: SST193                    # Sequencing study id
+#output directory 
+output_dir: ~/desktop/SST193/
+# path where metadata is
+path_to_metadata: ~/Downloads/metadata.csv
+#path where targeting metadata is
+metadata_path_for_tar: ~/Downloads/tar_entities.csv
+# path where dbd effector metadata is
+metadata_path_for_dbd: /Downloads/eff_entities.csv
+path_to_counts: ~/Downloads/gene_counts.tsv
+#path of tpm data
+path_to_tpm: ~/Downloads/gene_tpm.tsv
+# path of ensemble id files used for mapping
+ensembl_id_path: ~/Downloads/ensemble_id_path.txt 
+
+target_genes:
+  tg_1:
+    ensembl_id: ENSG00000169174 
+    gene_name: PCSK9
+    condition:
+     -1:1_TAR1244_0.5ugml_D14_plate6
+deseq2:
+  counts_filter_level: rows
+  independent_filter: TRUE
+  padj_cutoff: 1e-5
+  log_fold_change cutoff: 1
+protein_coding_only: FALSE 
+collapse_tech_reps: FALSE
+path_to_condition_pairs: ~/desktop/cond_pairs.csv # csv file with condition and reference condition columns
